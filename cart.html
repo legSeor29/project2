@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="api.js" defer></script>
+    <script src="singin&register.js" defer></script>
+    <script src="cart.js" defer></script>
+    <title>GameForce</title>
+</head>
+<body>
+    <header>
+        <span class="title">GameForce</span>
+        <nav>
+          <div class="popup_cont"> 
+            <button class="nav_but" onclick="openPopup()">Categories</button>
+            <div class="popup">
+                <button onclick="openPS()" class="popup_but">PS</button>
+                <button onclick="openXbox()" class="popup_but">Xbox</button>
+                <button onclick="OpenPC()" class="popup_but">PC</button>
+                <button onclick="closePopup()" class="popup_but">Close</button>
+                <!-- Содержимое всплывающего окна -->
+            </div>
+          </div>
+            <button class="nav_but" onclick="contact_inf()">About us</button>
+        </nav>
+    </header>
+    <main class="prod_cont">
+         <div class="product">
+            <img src="" class="">
+            <span>dfcfgdvg</span>
+         </div>
+    </main>
+    <footer id="aboutus">
+        <span class="footer_title">Our contacts</span>
+        <div class="contact_cont">
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-round-16166102.png">
+                <span class="contact_text">@GameForce</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-vk-logo-81893.png">
+                <span class="contact_text">gameForce</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-whatsapp-4423697.png">
+                <span class="contact_text">+7-(990)-000-70-05</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-youtube-1384060.png">
+                <span class="contact_text">GameForce</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

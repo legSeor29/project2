@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+body {
+    background-color: #999bae;
+} 
+ 
+.register_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+.register_inp {
+    margin-bottom: 10px;
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(135, 123, 123);
+     
+}
+ 
+.title {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+     
+}
+ 
+.register_but {
+    width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: #5c5c66;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 40px;
+  font-family: "Jaro", sans-serif;
+  
+}
+.register_but:hover {
+    transition: 1s ease-in-out;
+    background: #000000;
+    color:azure;
+  }
+  
+  .register_but:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .but_text span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+     
+  }
+  .but_text {
+    text-decoration: none;
+     color: black;
+     
+  }
+  .but_text:hover {
+    color:azure;
+  }
+ 
+ 

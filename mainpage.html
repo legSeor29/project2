@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="card.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="api.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="account.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span class="title">GameForce</span>
+        <nav>
+          <div class="popup_cont"> 
+            <button class="nav_but" onclick="openPopup()">Categories</button>
+            <div class="popup">
+                <button onclick="openPS()" class="popup_but">PS</button>
+                <button onclick="openXbox()" class="popup_but">Xbox</button>
+                <button onclick="openPC()" class="popup_but">PC</button>
+                <button onclick="closePopup()" class="popup_but">Close</button>
+                <!-- Содержимое всплывающего окна -->
+            </div>
+          </div>
+            <button onclick="contact_inf()" class="nav_but">About us</button>
+             
+        </nav>
+        <span class="nickname"></span>
+        <img src="resourses/free-icon-user-avatar-8188332.png" class="avatar">
+        <img src="resourses/free-icon-basket-7087821.png" class="cart_but" onclick="openCart()">
+    </header>
+    <section class="goods" id="PS">
+        <div class="card">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img class="photo"
+                  src="resourses/rdr2.jpg"
+                  alt="rdr2"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">4000</div>
+                <div class="card__price card__price--common">5000</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a class="card__title">
+                rdr2 for PS4
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img class="photo"
+                  src="resourses/GoW.jpg"
+                  alt="God of War Ragnarok"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">4000</div>
+                <div class="card__price card__price--common">5000</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a class="card__title">
+                God of War Ragnarok 
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img class="photo"
+                  src="resourses/MK.jpg"
+                  alt="MK"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">4000</div>
+                <div class="card__price card__price--common">5000</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a class="card__title">
+                MK for PS5
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img class="photo"
+                  src="resourses/AS.png"
+                  alt="AS"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">4000</div>
+                <div class="card__price card__price--common">5000</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a class="card__title">
+                Assasins Creed Mirage
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+    </section> 
+
+    <section class="goods" id="Xbox">
+      <div class="card">
+          <!-- Верхняя часть -->
+          <div class="card__top">
+            <!-- Изображение-ссылка товара -->
+            <a href="#" class="card__image">
+              <img class="photo"
+                src="resourses/fc24.jpg"
+                alt="fc24"
+              />
+            </a>
+            <!-- Скидка на товар -->
+            <div class="card__label">-10%</div>
+          </div>
+          <!-- Нижняя часть -->
+          <div class="card__bottom">
+            <!-- Цены на товар (с учетом скидки и без)-->
+            <div class="card__prices">
+              <div class="card__price card__price--discount">4000</div>
+              <div class="card__price card__price--common">5000</div>
+            </div>
+            <!-- Ссылка-название товара -->
+            <a class="card__title">
+              FC24 Xbox
+            </a>
+            <!-- Кнопка добавить в корзину -->
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Верхняя часть -->
+          <div class="card__top">
+            <!-- Изображение-ссылка товара -->
+            <a href="#" class="card__image">
+              <img class="photo"
+                src="resourses/ASwal.jpg"
+                alt="ASwal"
+              />
+            </a>
+            <!-- Скидка на товар -->
+            <div class="card__label">-10%</div>
+          </div>
+          <!-- Нижняя часть -->
+          <div class="card__bottom">
+            <!-- Цены на товар (с учетом скидки и без)-->
+            <div class="card__prices">
+              <div class="card__price card__price--discount">4000</div>
+              <div class="card__price card__price--common">5000</div>
+            </div>
+            <!-- Ссылка-название товара -->
+            <a class="card__title">
+              AS Valhalla 
+            </a>
+            <!-- Кнопка добавить в корзину -->
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Верхняя часть -->
+          <div class="card__top">
+            <!-- Изображение-ссылка товара -->
+            <a href="#" class="card__image">
+              <img class="photo"
+                src="resourses/150193_mortal-kombat-1.jpg"
+                alt="MK1"
+              />
+            </a>
+            <!-- Скидка на товар -->
+            <div class="card__label">-10%</div>
+          </div>
+          <!-- Нижняя часть -->
+          <div class="card__bottom">
+            <!-- Цены на товар (с учетом скидки и без)-->
+            <div class="card__prices">
+              <div class="card__price card__price--discount">4000</div>
+              <div class="card__price card__price--common">5000</div>
+            </div>
+            <!-- Ссылка-название товара -->
+            <a class="card__title">
+              MK1 Xbox
+            </a>
+            <!-- Кнопка добавить в корзину -->
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Верхняя часть -->
+          <div class="card__top">
+            <!-- Изображение-ссылка товара -->
+            <a href="#" class="card__image">
+              <img class="photo"
+                src="resourses/witcher.jpg"
+                alt="Witcher"
+              />
+            </a>
+            <!-- Скидка на товар -->
+            <div class="card__label">-10%</div>
+          </div>
+          <!-- Нижняя часть -->
+          <div class="card__bottom">
+            <!-- Цены на товар (с учетом скидки и без)-->
+            <div class="card__prices">
+              <div class="card__price card__price--discount">4000</div>
+              <div class="card__price card__price--common">5000</div>
+            </div>
+            <!-- Ссылка-название товара -->
+            <a class="card__title">
+              Witcher 3
+            </a>
+            <!-- Кнопка добавить в корзину -->
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+  </section>
+
+  <section class="goods" id="PC">
+    <div class="card">
+        <!-- Верхняя часть -->
+        <div class="card__top">
+          <!-- Изображение-ссылка товара -->
+          <a href="#" class="card__image">
+            <img class="photo"
+              src="resourses/MetroExodus.jpg"
+              alt="MetroExodus"
+            />
+          </a>
+          <!-- Скидка на товар -->
+          <div class="card__label">-10%</div>
+        </div>
+        <!-- Нижняя часть -->
+        <div class="card__bottom">
+          <!-- Цены на товар (с учетом скидки и без)-->
+          <div class="card__prices">
+            <div class="card__price card__price--discount">4000</div>
+            <div class="card__price card__price--common">5000</div>
+          </div>
+          <!-- Ссылка-название товара -->
+          <a class="card__title">
+            Metro Exodus
+          </a>
+          <!-- Кнопка добавить в корзину -->
+          <button class="card__add">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Верхняя часть -->
+        <div class="card__top">
+          <!-- Изображение-ссылка товара -->
+          <a href="#" class="card__image">
+            <img class="photo"
+              src="resourses/Atomic.jpg"
+              alt="Atomic"
+            />
+          </a>
+          <!-- Скидка на товар -->
+          <div class="card__label">-10%</div>
+        </div>
+        <!-- Нижняя часть -->
+        <div class="card__bottom">
+          <!-- Цены на товар (с учетом скидки и без)-->
+          <div class="card__prices">
+            <div class="card__price card__price--discount">4000</div>
+            <div class="card__price card__price--common">5000</div>
+          </div>
+          <!-- Ссылка-название товара -->
+          <a class="card__title">
+            Atomic Heart 
+          </a>
+          <!-- Кнопка добавить в корзину -->
+          <button class="card__add">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Верхняя часть -->
+        <div class="card__top">
+          <!-- Изображение-ссылка товара -->
+          <a href="#" class="card__image">
+            <img class="photo"
+              src="resourses/Mafia_Definitive_Edition.jpg"
+              alt="Mafia_Definitive_Edition"
+            />
+          </a>
+          <!-- Скидка на товар -->
+          <div class="card__label">-10%</div>
+        </div>
+        <!-- Нижняя часть -->
+        <div class="card__bottom">
+          <!-- Цены на товар (с учетом скидки и без)-->
+          <div class="card__prices">
+            <div class="card__price card__price--discount">4000</div>
+            <div class="card__price card__price--common">5000</div>
+          </div>
+          <!-- Ссылка-название товара -->
+          <a class="card__title">
+            Mafia 1
+          </a>
+          <!-- Кнопка добавить в корзину -->
+          <button class="card__add">В корзину</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Верхняя часть -->
+        <div class="card__top">
+          <!-- Изображение-ссылка товара -->
+          <a href="#" class="card__image">
+            <img class="photo"
+              src="resourses/GTAV.jpg"
+              alt="GTAV"
+            />
+          </a>
+          <!-- Скидка на товар -->
+          <div class="card__label">-10%</div>
+        </div>
+        <!-- Нижняя часть -->
+        <div class="card__bottom">
+          <!-- Цены на товар (с учетом скидки и без)-->
+          <div class="card__prices">
+            <div class="card__price card__price--discount">4000</div>
+            <div class="card__price card__price--common">5000</div>
+          </div>
+          <!-- Ссылка-название товара -->
+          <a class="card__title">
+            GTA V
+          </a>
+          <!-- Кнопка добавить в корзину -->
+          <button class="card__add">В корзину</button>
+        </div>
+      </div>
+</section>
+    <footer id="aboutus">
+        <span class="footer_title">Our contacts</span>
+        <div class="contact_cont">
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-round-16166102.png">
+                <span class="contact_text">@GameForce</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-vk-logo-81893.png">
+                <span class="contact_text">gameForce</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-whatsapp-4423697.png">
+                <span class="contact_text">+7-(990)-000-70-05</span>
+            </div>
+            <div class="contact">
+                <img class="contact_img" src="resourses/free-icon-youtube-1384060.png">
+                <span class="contact_text">GameForce</span>
+            </div>
+        </div>
+        
+    </footer>
+     
+</body>
+</html>
